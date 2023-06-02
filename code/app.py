@@ -13,11 +13,16 @@ app = Flask(__name__)
 @app.route('/')
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():
-    return 'Hello World'
+    return 'Hello Winner'
     
 @app.route("/registration",methods=['POST'])
 # ‘/’ URL is bound with hello_world() function.
 def hello_test():
+    return 'Hello Test is working'
+
+@app.route("/authenticate",methods=['POST'])
+# ‘/’ URL is bound with hello_world() function.
+def authenticate():
     return 'Hello Test is working'
  
  
